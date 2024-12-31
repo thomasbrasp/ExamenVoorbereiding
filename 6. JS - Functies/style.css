@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
+f-r {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+f:c {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
