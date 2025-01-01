@@ -26,33 +26,29 @@ const emailErrorMessage = document.createElement(`p`);
 const messageErrorMessage = document.createElement(`p`);
 const succesMessage = document.createElement(`p`);
 succesMessage.classList.add(`succes`);
+nameErrorMessage.textContent = `The name field is empty! Please fill in a value.`
+emailErrorMessage.textContent = `The email field is empty! Please fill in a value.`
+messageErrorMessage.textContent = `The message field is empty! Please fill in a value.`
 
 
 submitButton.addEventListener(`click`, (e) => {
     e.preventDefault();
     // errorContainer.innerHTML = "";
     const nameInputValue = document.querySelector(`#name`).value;
-    if (nameInputValue === ``) {
-        errorContainer.appendChild(nameErrorMessage);
-        nameErrorMessage.textContent = `The name field is empty! Please fill in a value.`
-    } else {
-        nameErrorMessage.remove();
-    }
-    const emailInputValue = document.querySelector(`#email`).value;
-    if (emailInputValue === ``) {
-        errorContainer.appendChild(emailErrorMessage);
-        emailErrorMessage.textContent = `The email field is empty! Please fill in a value.`
-    } else {
-        emailErrorMessage.remove();
-    }
-    const messageInputValue = document.querySelector(`#message`).value;
-    if (messageInputValue === ``) {
-        errorContainer.appendChild(messageErrorMessage);
 
-        messageErrorMessage.textContent = `The message field is empty! Please fill in a value.`
-    } else {
-        messageErrorMessage.remove();
-    }
+    if (nameInputValue === ``) errorContainer.appendChild(nameErrorMessage);
+    else nameErrorMessage.remove();
+
+    const emailInputValue = document.querySelector(`#email`).value;
+
+    if (emailInputValue === ``) errorContainer.appendChild(emailErrorMessage);
+    else emailErrorMessage.remove();
+
+    const messageInputValue = document.querySelector(`#message`).value;
+
+    if (messageInputValue === ``) errorContainer.appendChild(messageErrorMessage);
+    else messageErrorMessage.remove();
+
     if (nameInputValue !== `` && emailInputValue !== `` && messageInputValue !== ``) {
         errorContainer.appendChild(succesMessage)
 

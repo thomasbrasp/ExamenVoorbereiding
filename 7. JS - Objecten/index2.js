@@ -1,4 +1,11 @@
 "use strict";
+import fs from 'fs';
+
+const personData = JSON.parse(fs.readFileSync('./assets/person.json', 'utf8'));
+
+console.log(personData);
+console.log(`KAKA`)
+
 const person =
 
     {

@@ -2,6 +2,32 @@
 // // const qs = (selector) => document.querySelector(selector);
 // // const qsa = (selector) => document.querySelectorAll(selector);
 
+// import fs from 'fs';
+//
+// const jsonData = JSON.parse(fs.readFileSync('./test.json', 'utf8'));
+//
+// console.log(jsonData)
+// console.log(jsonData)
+
+// function replacer(key, value) {
+//   // Filtering out properties
+//   if (typeof value === "string") {
+//     return undefined;
+//   }
+//   return value;
+// }
+//
+// const foo = {
+//   foundation: "Mozilla",
+//   model: "box",
+//   week: 45,
+//   transport: "car",
+//   month: 7,
+// };
+// JSON.stringify(foo, replacer);
+// // '{"week":45,"month":7}'
+
+
 // // array.reduce((acc, n) => acc + n, 0);
 // // acc is result so far
 // // n is the value of the next item in array
