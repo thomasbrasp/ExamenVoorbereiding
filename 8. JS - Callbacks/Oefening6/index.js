@@ -9,3 +9,4 @@ function filterAndDouble(array) {
 
 const filteredArray = filterAndDouble(inputArray)
 console.log(filteredArray);
+//TODO: test
